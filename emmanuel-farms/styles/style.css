@@ -1,0 +1,354 @@
+:root{
+    --clr-primary: #325820;
+    --clr-secondary: #14bb1d;
+    --clr-accent1: #ffffff;
+    --clr-accent2: #000000;
+
+    --ff-header: Roboto;
+    --ff-paragraph: Poppins;
+
+    --fw-regular: 300;
+    --fw-semi-bold: 400;
+    --fw-bold: 500;
+
+    --fs-200: 0.875rem;
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.375rem;
+    --fs-600: 1.75rem;
+    --fs-700: 3.25rem;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-header,--ff-paragraph);
+    font-size: var(--fs-400);
+    line-height: 1.5;
+    font-weight: var(--fw-regular);
+    color: var(--clr-accent2);
+    margin: 0;
+    padding: 0;
+
+}
+/* header{
+    display: flex;
+    background-color: #325820;
+} */
+img{
+    max-width: 100%;
+    display: block;
+    
+}
+
+header{
+    display: flex;
+   
+    background-color: var(--clr-primary);
+    
+}
+
+.logo{
+    width: 8rem;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.nav-lists{
+    display: flex;
+    margin-left: 32rem;
+    padding-left: 1rem;
+    list-style: none;
+
+    
+}
+
+.nav-list-items{
+    padding: 1rem;
+    
+}
+.nav-list-links{
+    text-decoration: none;
+    font-size: var(--fs-400);
+    text-align: center;
+    padding: 0 3rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-accent1);
+}
+
+.bg-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.bg-img{
+    grid-column: 1/6;
+    grid-row: 1/3;
+
+}
+
+.bg-text{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    color: var(--clr-accent2);
+    margin-left: 2rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 3rem;
+
+}
+
+.h1-span{
+    color: var(--clr-secondary);
+}
+
+
+.bg-text h1{
+    font-size: var(--fs-600);
+}
+
+.bg-text p{
+    font-weight: var(--fw-regular);
+    color: var(--clr-accent1);
+}
+
+.why-us{
+    margin: 5rem;
+    text-align: center;
+    font-weight: var(--fw-regular);
+    padding: 1rem;
+    /* background-color: #edf2ed; */
+    background-color: #f8f8f8;
+}
+
+
+
+.banner-image{
+   width: 100%;
+   height: 500px;
+}
+
+.our-services{
+    margin: 3rem;
+   
+}
+
+.our-service-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    font-size: var(--fs-200);
+    text-align: center;
+}
+
+.card-divs{
+    /* border: 2px solid var(--clr-primary); */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--clr-primary) ;
+}
+
+.card-divs:first-child p{
+    line-height: 1rem;
+}
+
+.card-image{
+    margin: 0 2rem 0 0;
+    height: 240px;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card-divs p, h2{
+    padding: 0 1rem;
+}
+
+footer{
+    display: flex;
+    background-color: var(--clr-primary);
+    margin-top: 6rem;
+    padding: 3rem;
+    justify-content: space-around;
+    color: var(--clr-accent1);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-400);
+    padding-left: 0;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.social img{
+    margin: 1rem;
+    margin-right: 0;
+    width: 2.5rem;
+}
+
+p a{
+    color: var(--clr-accent1);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FARM MANAGEMENT AND CONSULTANCY */
+
+.background{
+    width: 0 auto;
+    height: 22rem;
+    background-color: var(--clr-primary);
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1rem;
+    color: var(--clr-accent1);
+}
+.background h1{
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.card-section{
+    margin: 0 8rem;
+    gap: 2rem;
+    
+}
+
+.text-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 1rem;
+    gap: 2rem;
+}
+
+.text{
+    font-size: var(--fs-300);
+    text-align: center;
+    /* margin-top: 2rem; */
+    
+    
+}
+
+.service-image img{
+    width: 30rem;
+    height: 20rem;
+    margin-top: 1rem;
+}
+
+.btn{
+    background-color: var(--clr-secondary);
+    color: var(--clr-accent1);
+    text-align: center;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-semi-bold);
+    height: 2.5rem;
+    width: 0 auto;
+    margin: 1rem 4rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: var(--clr-primary);
+}
+.btn p{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h3{
+    font-size: var(--fs-600);
+}
+
+footer p :hover{
+     color: var(--clr-secondary);
+}
+
+
+/* FORM SECTION */
+
+input[type = text], select, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--clr-secondary);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label{
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    display: inline-block;
+}
+
+input[type=submit]{
+    background-color: var(--clr-secondary);
+    color: var(--clr-accent1);
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width:100% ;
+    border-radius: 10px;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-semi-bold);
+    height: 2.5rem;
+}
+
+input[type=submit]:hover{
+    background-color: var(--clr-primary);
+    
+}
+
+.form-container{
+    background-color:#f8f8f8;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 0.5rem;
+}
+
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 0.5rem;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* FORM SECTION */
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .header{
+        display: block;
+        background-color: var(--clr-primary);}
+
+
+
+
+  }
