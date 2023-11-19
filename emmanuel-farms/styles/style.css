@@ -45,9 +45,7 @@ img{
 
 header{
     display: flex;
-   
     background-color: var(--clr-primary);
-    
 }
 
 .logo{
@@ -60,14 +58,18 @@ header{
     display: flex;
     margin-left: 32rem;
     padding-left: 1rem;
-    list-style: none;
-
-    
+    list-style: none; 
 }
+
+
 
 .nav-list-items{
     padding: 1rem;
     
+}
+.nav-list-items:hover{
+    background-color: var(--clr-secondary);
+    border-radius: 10px;
 }
 .nav-list-links{
     text-decoration: none;
@@ -335,6 +337,11 @@ input[type=submit]:hover{
     clear: both;
 }
 
+.nav-toggle{
+    display: none;
+}
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -343,12 +350,4 @@ input[type=submit]:hover{
       width: 100%;
       margin-top: 0;
     }
-
-    .header{
-        display: block;
-        background-color: var(--clr-primary);}
-
-
-
-
-  }
+}
