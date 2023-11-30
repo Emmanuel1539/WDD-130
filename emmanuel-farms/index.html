@@ -29,7 +29,7 @@
         </header> -->
 
         <nav>
-            <a href="home.html" class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="logo" class="logo-image">
             </a>
                 <label for="toggler">
@@ -38,7 +38,7 @@
             <input type="checkbox" id="toggler" name="toggler">
                 <div class="menu">
                     <ul class="list">
-                        <li class="nav-list-items"><a class="nav-list-links" href="home.html">Home</a></li>
+                        <li class="nav-list-items"><a class="nav-list-links" href="index.html">Home</a></li>
                         <li class="nav-list-items"><a class="nav-list-links" href="service.html">Services</a></li>
                         <li class="nav-list-items"><a class="nav-list-links" href="investments.html">Investments</a></li> 
                     </ul>
@@ -74,8 +74,9 @@
     <section class="our-services">
         <div class="our-service-container">
             <h2>Our Services</h2>
-            <div class="card-container">
-                <div class="card-divs">
+            <div class="card-container slideshow-container">
+                <div class="card-divs mySlides fade">
+                    
                     <img src="images/farm-management.jpg" alt="" class="card-image">
                     <h3>Farm management & Consultancy</h3>
                     <p>Our consultancy services offer tailored guidance and solutions for your farming
@@ -88,7 +89,8 @@
                    
                 </div>
 
-                <div class="card-divs">
+                <div class="card-divs mySlides fade">
+                 
                     <img src="images/tractor.jpg" alt="" class="card-image">
                     <h3>Equipments Leasing</h3>
                     <p>Access to high-quality equipment is essential. We offer a range of state-of-the-art farming tools and machinery for lease.
@@ -100,7 +102,8 @@
                     </div>    
                 </div>
 
-                <div class="card-divs">
+                <div class="card-divs mySlides fade">
+                    
                     <img src="images/farm-investment.jpg" alt="" class="card-image">
                     <h3>Investments Plans</h3>
                     <p>Investing in farm crop production can be daunting.
@@ -110,9 +113,21 @@
                     </p>
                     <div class="btn">
                         <p>See More</p>
-                    </div>    
+                    </div>  
+                    
                 </div>
+                <!-- Next and previous buttons
+                <a class="prev" onclick="plusSlides(-1)">&#10094; </a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               -->
             </div>
+            <br>
+            <!-- The dots/circles -->
+            <!-- <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> -->
         </div>
     </section>
 
@@ -133,5 +148,36 @@
                 </a>
             </div>
     </footer>
+
+    <!-- <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script> -->
 </body>
 </html>
