@@ -49,6 +49,10 @@ img{
     width: 8rem;
     padding: 1rem;
     margin-left: 2rem;
+  
+}
+.logo img{
+    border-radius: 5px;
 }
 
 nav {
@@ -199,7 +203,7 @@ nav {
 }
 
 .card-divs:first-child p{
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 
 .card-image{
@@ -321,6 +325,9 @@ footer p :hover{
      color: var(--clr-secondary);
 }
 
+footer img{
+    border-radius: 5px;
+}
 
 /* FORM SECTION */
 
@@ -441,10 +448,12 @@ input[type=submit]:hover{
 
         .why-us{
             padding: 0;
+            margin: 2rem;
         }
         .why-us-container{
             font-size: var(--fs-300);
             padding: 0;
+            
         }
         .card-container{
             display: flex;
@@ -452,6 +461,66 @@ input[type=submit]:hover{
             gap: 2rem;
         }
 
+
+        .background{
+            width: auto;
+            height: 18rem;
+            background-color: var(--clr-primary);
+            text-align: center;
+            margin-top: 0;
+            padding-top: 0.5rem;
+            color: var(--clr-accent1);
+    
+        }
+       .background h1{
+        font-size: var(--fs-700);
+        line-height: 3.5rem;
+       }
+       .background p{
+        font-size: var(--fs-300);
+       }
+
+       .card-section{
+        margin: 1rem ;
+        gap: 1rem;
+        
+        }
+
+
+        .text{
+            margin-top: 0;
+        }
+
+        .text h3{
+            margin-top: 0;
+        }
+       
+       .text-image{
+        display: flex;
+        flex-direction: column;
+       }
+       .interchange{
+        order: -1;
+       }
+       .text h3{
+        font-size: var(--fs-500);
+        padding-top: 0;
+       }
+       
+
+       footer{
+        font-size: var(--fs-200);
+        padding: 2.5rem 1rem;
+       }
+
+      
+       
+       .social img{
+        margin: 0.5rem;
+        margin-right: 0;
+        width: 1.5rem;
+        border-radius: 5px;
+        }
         /* .slideshow-container{
             max-width: 600px;
             position: relative;
